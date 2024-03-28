@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD Table</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1> <label id="nombreDeLaTabla" onclick = 'nombreDeLaTabla = prompt("ingrese el nombre de la tabla"); document.getElementById("nombreDeLaTabla").innerHTML=getLocalStorage("nombreDeLaTabla");'=>Name</label> CRUD Table</h1>
+  <button id="btn-agregar" onclick="agregarFila()">Add Field</button>
+  <table id="tabla">
+    <thead>
+      <tr>
+        <th>By</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows of the table are dynamically generated with JavaScript -->
+    </tbody>
+  </table>
+  <br>
+  <button id="btn-agregar" onclick="agregarFila()">Add Field</button>
+  <button id="btn-agregar" onclick="guardar2();console.log(DeleteFunctions);">Save</button>
+  
+  <br><br>
+  <a href="read.html"><button id="btn-next">Siguiente</button></a>
+
+
+  <script src="script_delete.js"></script>
+</body>
+</html>

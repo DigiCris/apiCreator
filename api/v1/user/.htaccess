@@ -1,0 +1,24 @@
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(getById)/(.+)$ index.php?method=$1&id=$2 
+RewriteRule ^(getByUsername)/(.+)$ index.php?method=$1&username=$2 
+RewriteRule ^(getByFirstName)/(.+)$ index.php?method=$1&firstName=$2 
+RewriteRule ^(getByLastName)/(.+)$ index.php?method=$1&lastName=$2 
+RewriteRule ^(getByEmail)/(.+)$ index.php?method=$1&email=$2 
+RewriteRule ^(getByPassword)/(.+)$ index.php?method=$1&password=$2 
+RewriteRule ^(getByPhone)/(.+)$ index.php?method=$1&phone=$2 
+RewriteRule ^(getByCountry)/(.+)$ index.php?method=$1&country=$2 
+RewriteRule ^(getByState)/(.+)$ index.php?method=$1&state=$2 
+RewriteRule ^(getByCity)/(.+)$ index.php?method=$1&city=$2 
+RewriteRule ^(getByRol)/(.+)$ index.php?method=$1&rol=$2 
+RewriteRule ^(getByKyc)/(.+)$ index.php?method=$1&kyc=$2 
+RewriteRule ^(getByTarjeta)/(.+)$ index.php?method=$1&tarjeta=$2 
+RewriteRule ^(getByCuenta)/(.+)$ index.php?method=$1&cuenta=$2 
+RewriteRule ^(getByAdmin)/(.+)$ index.php?method=$1&admin=$2 
+RewriteRule ^(getByPriceKm)/(.+)$ index.php?method=$1&priceKm=$2 
+RewriteRule ^(getByZona1)/(.+)$ index.php?method=$1&zona1=$2 
+RewriteRule ^(getByZona2)/(.+)$ index.php?method=$1&zona2=$2 
+RewriteRule ^(getByZona3)/(.+)$ index.php?method=$1&zona3=$2 
+RewriteRule ^(getByZona4)/(.+)$ index.php?method=$1&zona4=$2 
+RewriteRule ^([a-zA-Z0-9]+)$ index.php?method=$1
